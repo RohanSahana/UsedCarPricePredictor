@@ -2,7 +2,7 @@ from django.shortcuts import render
 import pandas as pd
 
 import pickle
-model = pickle.load(open('savedModel\pipe_n.pkl','rb'))
+model = pickle.load(open('pipe_n.pkl','rb'))
 
 # Create your views here.
 def Predictor(request):
