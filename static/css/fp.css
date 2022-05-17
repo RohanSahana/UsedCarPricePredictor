@@ -1,0 +1,140 @@
+body {
+    align-items: center;
+    background-image: linear-gradient(to left bottom, #550733, #4f0e3d, #461546, #3b1b4e, #2c2154, #212959, #132f5d, #00355f, #003e60, #00465c, #004d55, #0a524d);
+    height:43.6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    background-color: #15172b;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 2px 2px 1px 0.01px #eee;
+}
+
+.title {
+    text-align: center;
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.ic-title{
+    color: #eee;
+}
+
+.ic1 {
+    margin-top: 10px;
+}
+
+.ic2 {
+    margin-top: 30px;
+}
+
+.ic3 {
+    margin-top: 30px;
+}
+
+.ic4 {
+    margin-top: 30px;
+}
+
+.ic5 {
+    margin-top: 30px;
+}
+
+.ic6 {
+    margin-top: 30px;
+}
+
+.input {
+    text-align: center;
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+}
+
+.input:focus~,
+.input:not(:placeholder-shown){
+    transform: translateY(8px);
+}
+
+.placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+}
+
+.input:focus~.placeholder,
+.input:not(:placeholder-shown)~.placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown)~.placeholder {
+    color: #808097;
+}
+
+.submit {
+    background-image: linear-gradient(to right, #5f0003 0%, #000b5f 51%, #500003 100%);
+    margin-top: 30px;
+    padding: 8px 45px;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 12px;
+    width: 100%;
+    cursor:pointer;
+}
+
+.submit:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.reset {
+    background-image: linear-gradient(to right, #5f0003 0%, #000b5f 51%, #500003 100%);
+    margin-top: 8px;
+    padding: 8px 45px;
+    font-size: 1.2em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 210% 200%;
+    color: white;
+    border-radius: 12px;
+    width: 100%;
+    cursor:pointer;
+}
+
+.reset:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}

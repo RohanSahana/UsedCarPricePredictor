@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Used Car Price Predictor</title>
+
+    <link rel="stylesheet" href='{% static "css/fp.css" %}'>
+    
+</head>
+
+<body>
+    <form action="{% url 'result' %}" class="form" method="POST">
+        {% csrf_token %}
+        <div class="title">Used Car's Price Predictor</div>
+
+        <div class="input-container ic1">
+            <div class="ic-title ">YEAR</div>
+            <input type="number" name="Year" class="input" required>
+        </div>
+
+        <div class="input-container ic2">
+            <div class="ic-title">MILES TRAVELLED</div>
+            <input type="number" name="Mileage" class="input" required>
+        </div>
+
+        
+        <div class="input-container ic3">
+            <div class="ic-title">STATE</div>
+            <select class = 'State input' name="State" id="state" required></select>
+        </div>
+
+        <div class="input-container ic4">
+            <div class="ic-title">CITY</div>
+            <select class='City input' name="City" id="city" required></select>
+        </div>
+        <script type="text/javascript" src='{% static "js/sc.js" %}'></script>
+
+
+        <div class="input-container ic5">
+            <div class="ic-title">MAKE</div>
+            <select class='Make input' name="Make" id="make"></select> 
+        </div>
+
+        <div class="input-container ic6">
+            <div class="ic-title">MODEL</div>
+            <select class='Model input' name="Model" id="model" required></select>
+        </div>
+        <script type="text/javascript" src='{% static "js/mm.js" %}'></script>
+
+        <input class="submit" type="submit" value="Predict">
+        <input class="reset" type="reset">
+
+    </form>
+</body>
+
+</html>
