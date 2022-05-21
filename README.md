@@ -25,4 +25,4 @@ The aim of this project was to use machine learning models to predict the price 
 <img src ="https://user-images.githubusercontent.com/91614033/169650157-b6adb815-d2ae-470a-9f91-e714f38c8a8e.jpeg" width = 850 height = 350>
 
 
-**Deployed Web App** :  [Link](https://used-car-pricepred.herokuapp.com/)
+**Deployed Web App** :  [Click Here](https://used-car-pricepred.herokuapp.com/)
